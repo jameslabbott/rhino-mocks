@@ -1,4 +1,5 @@
 using System;
+using Castle.DynamicProxy;
 
 namespace Rhino.Mocks.Impl.RemotingMock
 {
@@ -6,7 +7,6 @@ namespace Rhino.Mocks.Impl.RemotingMock
     using System.Reflection;
     using System.Runtime.Remoting.Messaging;
     using System.Runtime.Remoting.Proxies;
-    using Castle.Core.Interceptor;
 
     /// <summary>
     /// Implementation of IInvocation based on remoting proxy

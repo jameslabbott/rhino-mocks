@@ -29,7 +29,7 @@
 
 using System;
 using System.Reflection;
-using Castle.Core.Interceptor;
+using Castle.DynamicProxy;
 using Xunit;
 using Rhino.Mocks.Exceptions;
 using Rhino.Mocks.Expectations;
@@ -210,7 +210,7 @@ namespace Rhino.Mocks.Tests.MethodRecorders
 			/// <summary>
 			/// Get the expectation for this method on this object with this arguments 
 			/// </summary>
-			public override ExpectationViolationException UnexpectedMethodCall(IInvocation invoication,object proxy, MethodInfo method, object[] args)
+			public override ExpectationViolationException UnexpectedMethodCall(IInvocation invoication, object proxy, MethodInfo method, object[] args)
 			{
 				throw new NotImplementedException();
 			}
